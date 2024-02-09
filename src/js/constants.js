@@ -1,0 +1,11 @@
+export const W1980 = 1980
+export const W1920 = 1920
+export const W1728 = 1728
+export const W1280 = 1280
+export const W1200 = 1200
+export const W1024 = 1024
+export const W991 = 991
+export const W768 = 768
+export const W640 = 640
+export const W480 = 480
+export const W320 = 320

@@ -1,0 +1,27 @@
+{
+  "name": "media-tracker",
+  "version": "1.0.0",
+  "description": "Processing media queries via browser API from JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "docs": "./node_modules/.bin/jsdoc src -r -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alekstar79/media-tracker.git"
+  },
+  "keywords": [
+    "match",
+    "@media",
+    "tracker"
+  ],
+  "author": "Aleksey Tarasenko <alekstar79@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alekstar79/media-tracker/issues"
+  },
+  "homepage": "https://github.com/alekstar79/media-tracker#readme",
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
+  }
+}

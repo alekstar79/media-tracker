@@ -51,7 +51,8 @@
     "pub:beta": "npm run build:lib && npm publish --tag beta",
     "pub:patch": "npm version patch && npm run build:lib && npm publish",
     "pub:minor": "npm version minor && npm run build:lib && npm publish",
-    "pub:major": "npm version major && npm run build:lib && npm publish"
+    "pub:major": "npm version major && npm run build:lib && npm publish",
+    "test": "echo \"No tests yet\" && exit 0"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",

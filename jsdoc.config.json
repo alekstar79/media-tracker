@@ -1,0 +1,85 @@
+{
+  "plugins": [
+    "node_modules/jsdoc-babel"
+  ],
+  "babel": {
+    "extensions": ["ts", "tsx"],
+    "ignore": ["**/*.(test|spec).ts"],
+    "babelrc": false,
+    "presets": [["@babel/preset-env", { "targets": { "node": true } }], "@babel/preset-typescript"],
+    "plugins": []
+  },
+  "recurseDepth": 10,
+  "source": {
+    "include": ["src/lib"],
+    "exclude": ["node_modules", "docs", "dist", "dist-lib"],
+    "includePattern": ".+\\.(js(doc|x)?|mjs|ts)$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "sourceType": "module",
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc","closure"]
+  },
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": true
+  },
+  "templates": {
+    "search": true,
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+      "outputSourceFiles": true,
+      "includeDate": false
+    },
+    "scripts": [],
+    "favicon": "",
+    "css": []
+  },
+  "opts": {
+    "template": "node_modules/docdash",
+    "encoding": "utf8",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true
+  },
+  "docdash": {
+    "static": true,
+    "sort": true,
+    "sectionOrder": [
+      "Classes",
+      "Modules",
+      "Externals",
+      "Events",
+      "Namespaces",
+      "Mixins",
+      "Tutorials",
+      "Interfaces"
+    ],
+    "disqus": "",
+    "openGraph": {
+      "title": "",
+      "type": "website",
+      "image": "",
+      "site_name": "",
+      "url": ""
+    },
+    "meta": {
+      "title": "",
+      "description": "",
+      "keyword": ""
+    },
+    "search": true,
+    "collapse": true,
+    "wrap": true,
+    "typedefs":true,
+    "navLevel": 3,
+    "private": false,
+    "removeQuotes":"trim",
+    "scripts": [],
+    "scopeInOutputPath": true,
+    "nameInOutputPath": true,
+    "versionInOutputPath": true
+  }
+}

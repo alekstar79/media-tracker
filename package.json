@@ -2,17 +2,22 @@
   "name": "media-tracker",
   "version": "1.0.0",
   "description": "Processing media queries via browser API from JavaScript",
-  "main": "main.js",
+  "type": "module",
   "scripts": {
-    "docs": "./node_modules/.bin/jsdoc src -r -d docs"
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "vite build --config vite.lib.config.ts",
+    "preview": "vite preview",
+    "docs": "node_modules/.bin/jsdoc -c jsdoc.config.json"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/alekstar79/media-tracker.git"
   },
   "keywords": [
-    "match",
-    "@media",
+    "media-queries",
+    "responsive",
+    "breakpoints",
     "tracker"
   ],
   "author": "Aleksey Tarasenko <alekstar79@yandex.ru>",
@@ -22,6 +27,18 @@
   },
   "homepage": "https://github.com/alekstar79/media-tracker#readme",
   "devDependencies": {
-    "jsdoc": "^4.0.2"
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/node": "^24.9.1",
+    "docdash": "^2.0.2",
+    "jsdoc": "^4.0.2",
+    "jsdoc-babel": "^0.5.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^4.5.4"
   }
 }
